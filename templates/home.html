@@ -3,9 +3,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    {% load static %}
     <title></title>
   </head>
   <body>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <p>In the meantime, conjure up the demographics of an imaginary person aboard the titanic and determine whether they would've survived or not.</p>
     <form action="{% url 'result' %}">
       {% csrf_token %}
