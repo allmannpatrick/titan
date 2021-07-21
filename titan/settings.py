@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.144.164.214']
+ALLOWED_HOSTS = ['18.144.164.214', 'roadpeoples.com']
 
 
 # Application definition
