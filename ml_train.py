@@ -1,5 +1,5 @@
 from PIL import Image
-
+from tensorflow.python import keras
 import numpy as np
 #import matplotlib.pyplot as plt
 from tensorflow.keras.utils import to_categorical
@@ -82,7 +82,7 @@ X_train,X_test,y_train,y_test = train_test_split(X,Y,test_size=0.1)
 
 optimizer = Adam(lr=0.001)
 model.compile(optimizer=optimizer,loss = 'binary_crossentropy',metrics=['acc'])
-h = model.fit(X_train,y_train,batch_size=50,epochs = 2,shuffle=True,validation_data=(X_test,y_test))
+h = model.fit(X_train,y_train,batch_size=50,epochs = 30,shuffle=True,validation_data=(X_test,y_test))
 
 model.save('fluff_CNN.h5')
 
